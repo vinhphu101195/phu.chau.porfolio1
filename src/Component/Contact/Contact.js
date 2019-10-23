@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import { ProjectContext } from "../../contexts/ProjectContexts";
 import "./Contact.css";
 
 export default function Contact() {
-    const { projectObject } = useContext(ProjectContext);
-    console.log(projectObject);
 
     return (
         <section id="contact">

@@ -8,6 +8,7 @@ import ProjectContexts from "./contexts/ProjectContexts";
 import Home from "./Component/Home/HomeComponent";
 import Profile from "./Component/Profile/ProfileComponent";
 import Third from "./Third";
+import Project from './Component/Project/Project';
 import Contact from "./Component/Contact/Contact";
 
 export default class FullPage extends React.Component {
@@ -25,8 +26,6 @@ export default class FullPage extends React.Component {
     this.setState({ currentPage: number });
   };
 
-
-
   render() {
     return (
       <React.Fragment>
@@ -34,7 +33,7 @@ export default class FullPage extends React.Component {
           <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
             <Home />
             <Profile />
-            <Third />
+            <Project />
             <Contact />
           </ReactPageScroller>
         </ProjectContexts>
