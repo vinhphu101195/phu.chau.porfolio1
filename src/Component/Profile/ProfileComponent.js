@@ -19,33 +19,6 @@ class Profile extends Component {
         Orgranizing: 90
     };
 
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
-    componentWillMount() {
-        this.scrollListener = window.addEventListener("scroll", e => {
-            this.handleScrolled(this.state.clock);
-        });
-    }
-
-    loadmore = () => {
-        this.setState({
-            clock: true
-        });
-    };
-
-    handleScrolled = clock => {
-        if (clock === false) {
-            const lastItem = document.querySelector(".scroll");
-            const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
-            const pageOffset = window.pageYOffset + window.innerHeight;
-            if (pageOffset >= lastItemOffset) {
-                this.loadmore();
-                this.props.history.push("/projects");
-            }
-        }
-    };
     render() {
         return (
             <div>
@@ -199,8 +172,6 @@ class Profile extends Component {
                         </div>
                     </div>
                 </div>
-                <div className=" bottom-project" />
-                <div className="scroll bottom-project" />
             </div>
         );
     }

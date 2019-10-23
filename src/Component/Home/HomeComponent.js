@@ -15,7 +15,6 @@ const HomeComponent = () => {
                     </button>
                 </div>
             </header>
-            <div className="scroll  bottom-project" />
         </div>
     );
 }

@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 .body-profile {
+  display: flex;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -8,7 +10,7 @@
 }
 
 .container {
-  margin: auto;
+  align-self: center;
   padding: 0.1rem;
   height: 35.25rem;
   width: 62rem;
@@ -195,7 +197,6 @@
 }
 
 .bottom .part1 {
-  display: inline-block;
   width: 45%;
   margin-left: 1.3rem;
   float: left;
@@ -220,7 +221,8 @@
 
 /* PHOTO */
 .photo {
-  background-size: 100%;
+  background-size: 145%;
+  background-position: center;
   background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0) 0%,
@@ -338,6 +340,7 @@
 }
 @media only screen and (max-width: 480px) {
   .body-profile {
+
     width: 100vw;
     height: auto;
     overflow: hidden;
