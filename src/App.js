@@ -1,16 +1,11 @@
 import React from "react";
 import ReactPageScroller from "react-page-scroller";
-
+import "./index.css";
 
 import Home from "./Component/Home/HomeComponent";
 import Profile from "./Component/Profile/ProfileComponent";
-import Contact from "./Component/Contact/Contact";
-
 import Third from "./Third";
-import Fourth from "./Fourth";
-import Fifth from "./Fifth";
-
-import "./index.css";
+import Contact from "./Component/Contact/Contact";
 
 export default class FullPage extends React.Component {
   constructor(props) {
@@ -36,7 +31,6 @@ export default class FullPage extends React.Component {
         <Profile />
         <Third />
         <Contact />
-        <Fifth />
       </ReactPageScroller>
 
     </React.Fragment>
