@@ -8,8 +8,8 @@ const HomeComponent = () => {
             <header className="App-header ">
                 <img src={logo} className="App-logo" alt="logo" />
                 <div className="header-infor">
-                    <h1>Phu Chau</h1>
-                    <h2>"Maximum Effort" </h2>
+                    <h1 className="header-title">Phu Chau</h1>
+                    <h2 className="header-slogan">"Work Hard, Play Hard" </h2>
                     <button to="/profile" className="btn btn--green  ">
                         Discover More
                     </button>
