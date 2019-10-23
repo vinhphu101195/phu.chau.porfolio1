@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+.body-profile {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, #181a1f, #111);
+}
+
+.container {
+  margin: auto;
+  padding: 0.1rem;
+  height: 35.25rem;
+  width: 62rem;
+  background: rgba(255, 255, 255, 0.968);
+  border-radius: 0.6rem;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* CARDS */
+.top {
+  display: flex;
+}
+
+.main,
+.photo {
+  width: 15.7rem;
+  height: 19rem;
+}
+
+/* LINES */
+.main ul li.bar,
+.info ul li.bar {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  background: #f39608;
+  color: #f39608;
+  width: 70%;
+  height: 1px;
+  margin: 1rem auto;
+}
+
+.main ul li.bar:after,
+.info ul li.bar:after {
+  content: "★";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  padding: 0 5px;
+  background: white;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main ul li {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main .name {
+  color: #1c1e36;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.main .position {
+  color: #00328f;
+  font-weight: 300;
+}
+
+.main .flag {
+  margin-top: 10px;
+  width: 10%;
+}
+
+/* INFO */
+.info {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  width: 48%;
+  height: 19rem;
+
+  margin-left: 2%;
+}
+
+.info .skill {
+  display: inline-block;
+}
+
+.info .skill-bar {
+  width: 70%;
+  height: 8px;
+  background-color: #cfcfcf;
+  border-radius: 3.125rem;
+  display: inline-block;
+}
+
+.info .skill-bar .skill-bar-fill {
+  height: 100%;
+  border-radius: 3.125rem;
+  background-color: #f39608;
+}
+
+.animation-html {
+  animation: bar-animation-html 2s ease-out;
+}
+.animation-css {
+  animation: bar-animation-css 2s ease-out;
+}
+.animation-javascript {
+  animation: bar-animation-javascript 2s ease-out;
+}
+.animation-react {
+  animation: bar-animation-react 2s ease-out;
+}
+.animation-redux {
+  animation: bar-animation-redux 2s ease-out;
+}
+.animation-reactrouter {
+  animation: bar-animation-reactrouter 2s ease-out;
+}
+.animation-sass {
+  animation: bar-animation-sass 2s ease-out;
+}
+.animation-sql {
+  animation: bar-animation-sql 2s ease-out;
+}
+.animation-nodejs {
+  animation: bar-animation-nodejs 2s ease-out;
+}
+.animation-logical-thinking {
+  animation: bar-animation-logical-thinking 2s ease-out;
+}
+.animation-teamwork {
+  animation: bar-animation-teamwork 2s ease-out;
+}
+.animation-problem-solving {
+  animation: bar-animation-problem-solving 2s ease-out;
+}
+.animation-orgranizing {
+  animation: bar-animation-orgranizing 2s ease-out;
+}
+
+.info .skill-left {
+  float: left;
+  width: 50%;
+}
+.info .skill-right {
+  width: 50%;
+}
+
+.info ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.info ul li {
+  width: 80%;
+  margin: auto;
+}
+
+.info .header {
+  color: #00328f;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.info .data {
+  color: #1c1e36;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* bottom */
+.bottom {
+  margin-top: 1.2rem;
+  width: 100%;
+  height: 12.1rem;
+}
+
+.bottom .part1 {
+  display: inline-block;
+  width: 45%;
+  margin-left: 1.3rem;
+  float: left;
+}
+
+.bottom .title {
+  font-weight: 700;
+  color: #1c1e36;
+  text-align: center;
+}
+
+.bottom .part2 {
+  display: inline-block;
+  margin-left: 3.01rem;
+  width: 45%;
+}
+
+.bottom .year {
+  color: #00328f;
+  font-size: 120%;
+}
+
+/* PHOTO */
+.photo {
+  background-size: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.027) 44%,
+      white 100%
+    ),
+    url("avatar.jpg");
+}
+
+/* #f39608 : mau vang */
+
+@keyframes bar-animation-html {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes bar-animation-css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes bar-animation-javascript {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes bar-animation-react {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes bar-animation-redux {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes bar-animation-reactrouter {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes bar-animation-sass {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes bar-animation-sql {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes bar-animation-nodejs {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes bar-animation-logical-thinking {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes bar-animation-teamwork {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes bar-animation-problem-solving {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes bar-animation-orgranizing {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .body-profile {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, #181a1f, #111);
+    font-size: 20px;
+  }
+  .container {
+    display: inline-table;
+    position: relative;
+    margin: 2rem 0rem;
+    padding: 0.1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 95vw;
+    background: rgba(255, 255, 255, 0.968);
+    border-radius: 0.6rem;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+      0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .top {
+    display: block;
+    font-size: 30px;
+  }
+  .main {
+    height: auto;
+    margin: 5rem auto;
+  }
+  .photo {
+    display: block;
+    width: 20.5rem;
+    height: 18rem;
+    margin: 5rem auto;
+  }
+  .bottom {
+    height: auto;
+  }
+  .info {
+    width: 100vw;
+    height: auto;
+  }
+  .data {
+    font-size: 20px !important;
+  }
+  .header {
+    font-size: 25px !important;
+  }
+  .info .skill-left {
+    width: 100vw;
+  }
+  .info .skill-right {
+    width: 100vw;
+  }
+
+  .bottom .part1,
+  .bottom .part2 {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .bottom .part2 {
+    margin-bottom: 3rem;
+  }
+}
