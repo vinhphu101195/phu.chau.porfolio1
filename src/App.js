@@ -2,6 +2,9 @@ import React from "react";
 import ReactPageScroller from "react-page-scroller";
 import "./index.css";
 
+import ProjectContexts from "./contexts/ProjectContexts";
+
+
 import Home from "./Component/Home/HomeComponent";
 import Profile from "./Component/Profile/ProfileComponent";
 import Third from "./Third";
@@ -25,14 +28,18 @@ export default class FullPage extends React.Component {
 
 
   render() {
-    return <React.Fragment>
-      <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
-        <Home />
-        <Profile />
-        <Third />
-        <Contact />
-      </ReactPageScroller>
+    return (
+      <React.Fragment>
+        <ProjectContexts>
+          <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
+            <Home />
+            <Profile />
+            <Third />
+            <Contact />
+          </ReactPageScroller>
+        </ProjectContexts>
 
-    </React.Fragment>
+      </React.Fragment>
+    )
   }
 }
