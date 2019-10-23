@@ -4,6 +4,7 @@ import ReactPageScroller from "react-page-scroller";
 
 import Home from "./Component/Home/HomeComponent";
 import Profile from "./Component/Profile/ProfileComponent";
+import Contact from "./Component/Contact/Contact";
 
 import Third from "./Third";
 import Fourth from "./Fourth";
@@ -34,7 +35,7 @@ export default class FullPage extends React.Component {
         <Home />
         <Profile />
         <Third />
-        <Fourth goToPage={this.goToPage} />
+        <Contact />
         <Fifth />
       </ReactPageScroller>
 
