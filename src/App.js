@@ -2,12 +2,13 @@ import React from "react";
 import ReactPageScroller from "react-page-scroller";
 import "./index.css";
 
+
 import ProjectContexts from "./contexts/ProjectContexts";
 
 
 import Home from "./Component/Home/HomeComponent";
 import Profile from "./Component/Profile/ProfileComponent";
-import Third from "./Third";
+import Navbar from "./Component/Navbar/Navbar";
 import Project from './Component/Project/Project';
 import Contact from "./Component/Contact/Contact";
 
@@ -30,6 +31,7 @@ export default class FullPage extends React.Component {
     return (
       <React.Fragment>
         <ProjectContexts>
+          <Navbar></Navbar>
           <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
             <Home />
             <Profile />

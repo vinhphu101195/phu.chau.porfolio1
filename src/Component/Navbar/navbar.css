@@ -1,0 +1,95 @@
+.navbar-parent {
+    position: relative;
+    z-index: 99999;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 50%;
+    width: 10%;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .icon {
+    color: #fff;
+    font-size: 45px;
+    display: block;
+    margin: 30px;
+  }
+  
+  .nav-li {
+    text-decoration: none;
+  }
+  
+  .nav-li:hover {
+    cursor: pointer;
+  }
+  
+  /* Mobile navi */
+  .mobile-nav-icon {
+    float: right;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  .mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+  }
+  
+  .active-link {
+    margin-left: 2rem;
+  }
+  
+  .none-under {
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 16px;
+    }
+    section {
+      padding: 1.5rem 0;
+    }
+    .mobile-nav-icon {
+      display: inline-block;
+      z-index: 99;
+      position: fixed;
+      left: 75%;
+      top: 0.2%;
+    }
+    .navbar-parent {
+      height: 4rem;
+    }
+    .navbar {
+      margin: 0;
+      width: 90vw;
+      z-index: 9;
+      margin-top: 2px;
+      height: 10vh;
+    }
+    .displayNavbar {
+      display: inline-block;
+    }
+    .nondisplayNavbar {
+      display: none;
+    }
+    .icon {
+      font-size: 1.5rem;
+      display: inline-block;
+      margin: 1rem;
+      margin-top: 1.5rem;
+    }
+    .active-link {
+      margin-left: 0.5rem;
+    }
+    .mobile-navlink {
+      display: inline;
+      width: fit-content;
+    }
+  }
