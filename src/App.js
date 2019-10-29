@@ -2,14 +2,12 @@ import React from "react";
 import ReactPageScroller from "react-page-scroller";
 import "./index.css";
 
-
 import ProjectContexts from "./contexts/ProjectContexts";
-
 
 import Home from "./Component/Home/HomeComponent";
 import Profile from "./Component/Profile/ProfileComponent";
 import Navbar from "./Component/Navbar/Navbar";
-import Project from './Component/Project/Project';
+import Project from "./Component/Project/Project";
 import Contact from "./Component/Contact/Contact";
 
 export default class FullPage extends React.Component {
@@ -19,28 +17,30 @@ export default class FullPage extends React.Component {
     this._pageScroller = null;
   }
 
-  goToPage = (eventKey) => {
+  goToPage = eventKey => {
     this._pageScroller.goToPage(eventKey);
   };
 
-  pageOnChange = (number) => {
+  pageOnChange = number => {
     this.setState({ currentPage: number });
   };
 
   render() {
     return (
       <React.Fragment>
+        <Navbar></Navbar>
         <ProjectContexts>
-          <Navbar></Navbar>
-          <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
+          <ReactPageScroller
+            ref={c => (this._pageScroller = c)}
+            pageOnChange={this.pageOnChange}
+          >
             <Home />
             <Profile />
             <Project />
             <Contact />
           </ReactPageScroller>
         </ProjectContexts>
-
       </React.Fragment>
-    )
+    );
   }
 }
