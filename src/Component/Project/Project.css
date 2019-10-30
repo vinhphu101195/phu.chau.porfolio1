@@ -58,10 +58,20 @@ height: 100%;
    font-size: 45px;
    margin: 0 30px;
 }
+.projects__icons:hover{
+  cursor: pointer;
+}
+.projects__icons:active,
+.projects__icons:focus{
+  color:grey;
+}
 
 .popup__link-source__detail{
   color:rgb(192, 189, 189);
   text-decoration: none;
+}
+.popup__link-source__detail:hover{
+  color: #fff;
 }
 
 
