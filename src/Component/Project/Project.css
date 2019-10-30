@@ -25,6 +25,10 @@
   padding-top: 0;
   justify-items: left;
 }
+.projects__list__click:hover{
+  cursor: pointer;
+}
+
 
 .projects__detail {
   grid-column: 2/3;
@@ -55,6 +59,10 @@ height: 100%;
    margin: 0 30px;
 }
 
+.popup__link-source__detail{
+  color:rgb(192, 189, 189);
+  text-decoration: none;
+}
 
 
 .projects__details__skills {
