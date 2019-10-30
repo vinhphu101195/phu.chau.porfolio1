@@ -27,7 +27,11 @@ const Projects = () => {
               setPopup(project);
               setPhotoIndex(0);
             }}
-            className="projects__list__click"
+            className={
+              popup.name === project.name
+                ? " projects__list__click isActive"
+                : "projects__list__click"
+            }
           >
             <li>{project.name}</li>
           </div>
@@ -57,7 +61,11 @@ const Projects = () => {
       <div className="projects__detail">
         <div className="projects__detail__photo ">
           <i
-            className="fas fa-chevron-left projects__icons"
+            className={
+              photoIndex === 0
+                ? "fas fa-chevron-left projects__icons isLocked"
+                : "fas fa-chevron-left projects__icons"
+            }
             onClick={() => onclickLeft()}
           ></i>
           <img
@@ -66,7 +74,11 @@ const Projects = () => {
             alt="example of project"
           />
           <i
-            className="fas fa-chevron-right projects__icons"
+            className={
+              photoIndex === popup.photo.length - 1
+                ? "fas fa-chevron-right projects__icons isLocked"
+                : "fas fa-chevron-right projects__icons"
+            }
             onClick={() => onclickRight()}
           ></i>
         </div>

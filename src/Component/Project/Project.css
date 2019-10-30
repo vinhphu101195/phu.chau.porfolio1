@@ -27,6 +27,8 @@
 }
 .projects__list__click:hover{
   cursor: pointer;
+  color: grey;
+
 }
 
 
@@ -60,6 +62,7 @@ height: 100%;
 }
 .projects__icons:hover{
   cursor: pointer;
+  color:rgb(188, 188, 240);
 }
 .projects__icons:active,
 .projects__icons:focus{
@@ -102,4 +105,15 @@ height: 100%;
 .projects__details__description{
     font-size: 110%;
     letter-spacing: 0.9px;
+}
+
+.isActive{
+  color:grey;
+  transform: translateX(-30px);
+}
+.isLocked{
+  color:gray;
+}
+.isLocked:hover{
+  cursor: not-allowed;
 }
