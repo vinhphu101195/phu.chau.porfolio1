@@ -21,7 +21,6 @@
     color: gray;
     transform: translateX(30px);
     transition-delay: 0.3s;
-    
   }
   
   .icon {
@@ -101,5 +100,8 @@
     .mobile-navlink {
       display: inline;
       width: fit-content;
+    }
+    .nav__active{
+      transform: translateX(0px);
     }
   }
