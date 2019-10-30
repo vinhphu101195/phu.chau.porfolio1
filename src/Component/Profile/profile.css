@@ -119,43 +119,43 @@
 }
 
 .animation-html {
-  animation: bar-animation-html 2s ease-out;
+  animation: bar-animation-html 8s ease-out;
 }
 .animation-css {
-  animation: bar-animation-css 2s ease-out;
+  animation: bar-animation-css 8s ease-out;
 }
 .animation-javascript {
-  animation: bar-animation-javascript 2s ease-out;
+  animation: bar-animation-javascript 8s ease-out;
 }
 .animation-react {
-  animation: bar-animation-react 2s ease-out;
+  animation: bar-animation-react 8s ease-out;
 }
 .animation-redux {
-  animation: bar-animation-redux 2s ease-out;
+  animation: bar-animation-redux 8s ease-out;
 }
 .animation-reactrouter {
-  animation: bar-animation-reactrouter 2s ease-out;
+  animation: bar-animation-reactrouter 8s ease-out;
 }
 .animation-sass {
-  animation: bar-animation-sass 2s ease-out;
+  animation: bar-animation-sass 8s ease-out;
 }
 .animation-sql {
-  animation: bar-animation-sql 2s ease-out;
+  animation: bar-animation-sql 8s ease-out;
 }
 .animation-nodejs {
-  animation: bar-animation-nodejs 2s ease-out;
+  animation: bar-animation-nodejs 8s ease-out;
 }
 .animation-logical-thinking {
-  animation: bar-animation-logical-thinking 2s ease-out;
+  animation: bar-animation-logical-thinking 8s ease-out;
 }
 .animation-teamwork {
-  animation: bar-animation-teamwork 2s ease-out;
+  animation: bar-animation-teamwork 8s ease-out;
 }
 .animation-problem-solving {
-  animation: bar-animation-problem-solving 2s ease-out;
+  animation: bar-animation-problem-solving 8s ease-out;
 }
 .animation-orgranizing {
-  animation: bar-animation-orgranizing 2s ease-out;
+  animation: bar-animation-orgranizing 8s ease-out;
 }
 
 .info .skill-left {
