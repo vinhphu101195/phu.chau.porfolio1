@@ -16,7 +16,7 @@ export default function Contact() {
 
             <li className="list-item">
               <i className="fas fa-mobile-alt fa-2x">
-                <span className="contact-text phone">(+358) 469547704</span>
+                <span className="contact-text phone">(+358) 469547704 (WhatsApp)</span>
               </i>
             </li>
 
