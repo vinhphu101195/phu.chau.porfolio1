@@ -20,7 +20,7 @@
   .nav__active{
     color: gray;
     transform: translateX(30px);
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
     
   }
   
