@@ -8,8 +8,6 @@ export default function Navbar(props) {
   }
   const [open, setopen] = useState(false);
 
-  console.log(props.currentPage);
-
   return (
     <div className="navbar-parent">
       <ul className={open ? "navbar displayNavbar" : "navbar nondisplayNavbar"}>
