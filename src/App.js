@@ -28,13 +28,13 @@ export default class FullPage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar></Navbar>
+        <Navbar  currentPage={this.state.currentPage} OngoToPage = {(number) =>this.goToPage(number)}></Navbar>
         <ProjectContexts>
           <ReactPageScroller
             ref={c => (this._pageScroller = c)}
             pageOnChange={this.pageOnChange}
           >
-            <Home />
+            <Home OngoToPage = {(number) =>this.goToPage(number)}/>
             <Profile />
             <Project />
             <Contact />

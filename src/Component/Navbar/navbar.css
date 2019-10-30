@@ -13,6 +13,16 @@
     padding: 0;
     text-align: center;
   }
+  .nav__icons:hover{
+    color:gray;
+    cursor: pointer;
+  }
+  .nav__active{
+    color: gray;
+    transform: translateX(30px);
+    transition-delay: 0.5s;
+    
+  }
   
   .icon {
     color: #fff;
