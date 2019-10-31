@@ -6,8 +6,8 @@ export default function Popup() {
     <div className="popup" id="popup">
       <div className="popup__content">
         <h1>
-          Hi, you are accessing my portfolio by mobile device, so please click
-          the button to move to another page
+          Hi, it seems like you are using mobile device. Please, CLICK the
+          button to move to the page for mobile device.
         </h1>
         <a href="https://phuchauportfolio2.netlify.com/">
           <button className="btn btn--green btn--move">Move</button>
