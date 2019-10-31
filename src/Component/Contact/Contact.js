@@ -16,7 +16,9 @@ export default function Contact() {
 
             <li className="list-item">
               <i className="fas fa-mobile-alt fa-2x">
-                <span className="contact-text phone">(+358) 469547704 (WhatsApp)</span>
+                <span className="contact-text phone">
+                  (+358) 469547704 (WhatsApp)
+                </span>
               </i>
             </li>
 
@@ -25,6 +27,20 @@ export default function Contact() {
                 <span className="contact-text gmail">
                   <a href="mailto:vinhphu101195@gmail.com">
                     vinhphu101195@gmail.com
+                  </a>
+                </span>
+              </i>
+            </li>
+
+            <li className="list-item">
+              <i className="fa fa-download fa-2x" aria-hidden="true">
+                <span className="contact-text gmail">
+                  <a
+                    href="https://drive.google.com/file/d/1tGndbJok4LyOsKt_uHL1ZP9vhRVq0pOa/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    My CV
                   </a>
                 </span>
               </i>
