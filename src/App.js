@@ -9,6 +9,7 @@ import Profile from "./Component/Profile/ProfileComponent";
 import Navbar from "./Component/Navbar/Navbar";
 import Project from "./Component/Project/Project";
 import Contact from "./Component/Contact/Contact";
+import Popup from "./Component/PopupResponsive/Popup";
 
 export default class FullPage extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ export default class FullPage extends React.Component {
     return (
       <React.Fragment>
         <Navbar  currentPage={this.state.currentPage} OngoToPage = {(number) =>this.goToPage(number)}></Navbar>
+        <Popup></Popup>
         <ProjectContexts>
           <ReactPageScroller
             ref={c => (this._pageScroller = c)}

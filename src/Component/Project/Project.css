@@ -25,12 +25,10 @@
   padding-top: 0;
   justify-items: left;
 }
-.projects__list__click:hover{
+.projects__list__click:hover {
   cursor: pointer;
   color: grey;
-
 }
-
 
 .projects__detail {
   grid-column: 2/3;
@@ -43,77 +41,87 @@
   padding-right: 30px;
 }
 
-
 .projects__detail__photo {
   width: 70%;
   height: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.projects__detail__img{
-width: 80%;
-height: 100%;
+.projects__detail__img {
+  width: 80%;
+  height: 100%;
 }
-.projects__icons{
-   font-size: 45px;
-   margin: 0 30px;
+.projects__icons {
+  font-size: 45px;
+  margin: 0 30px;
 }
-.projects__icons:hover{
+.projects__icons:hover {
   cursor: pointer;
-  color:rgb(188, 188, 240);
+  color: rgb(188, 188, 240);
 }
 .projects__icons:active,
-.projects__icons:focus{
-  color:grey;
+.projects__icons:focus {
+  color: grey;
 }
 
-.popup__link-source__detail{
-  color:rgb(192, 189, 189);
+.popup__link-source__detail {
+  color: rgb(192, 189, 189);
   text-decoration: none;
 }
-.popup__link-source__detail:hover{
+.popup__link-source__detail:hover {
   color: #fff;
 }
-
 
 .projects__details__skills {
   display: flex;
 }
-.project__details__skill{
-    font-style: italic;
-    display: inline;
-    padding: .2em .6em .3em;
-    font-size: 90%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border: 2px solid #d1d0d0;
-    border-radius: 2.5em;
-    margin-left: 5px;
+.project__details__skill {
+  font-style: italic;
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 90%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border: 2px solid #d1d0d0;
+  border-radius: 2.5em;
+  margin-left: 5px;
 }
 
 .projects__details__links {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color:rgba(199, 196, 196, 0.712);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(199, 196, 196, 0.712);
 }
 
-.projects__details__description{
-    font-size: 110%;
-    letter-spacing: 0.9px;
+.projects__details__description {
+  font-size: 110%;
+  letter-spacing: 0.9px;
 }
 
-.isActive{
-  color:grey;
+.isActive {
+  color: grey;
   transform: translateX(-30px);
 }
-.isLocked{
-  color:gray;
+.isLocked {
+  color: gray;
 }
-.isLocked:hover{
+.isLocked:hover {
   cursor: not-allowed;
+}
+
+@media only screen and (max-width: 1200px) {
+  .projects__details__description {
+    font-size: 90%;
+    letter-spacing: 0.2px;
+  }
+
+  .projects__detail {
+    grid-column: 1/3;
+    padding: 2rem;
+  }
+
 }
