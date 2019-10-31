@@ -1,7 +1,7 @@
 # Phu Chau Portfolio 1
 
 ## Welcome to my portfolio 1, I use HTML CSS SASS and React Hook and React Page Scroller to build this project.
-[Demo](https://www.google.com)
+[Demo](https://phuchauportfolio.netlify.com/)
 
 
 ## I have another poptfolio:
