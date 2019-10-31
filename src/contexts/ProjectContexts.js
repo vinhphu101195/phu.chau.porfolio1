@@ -99,7 +99,7 @@ const ProjectContexts = props => {
       img: Diary,
       skills: ["HTML", "CSS", "Frirebase", "Reactjs", "Redux", "React Router"],
       sourcecode: "https://github.com/vinhphu101195/diary-react-redux-firebase",
-      demo: "https://net-ninja-phuchau.herokuapp.com/signin",
+      demo: "https://diary-phuchau.herokuapp.com/",
       description: `React, Redux, React Router and Firebase are used in a project. There are authentication function and storing 
       data from Firebase. The user can sign up and sign in, then user can create a plan with the title and content.
     `,
