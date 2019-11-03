@@ -36,7 +36,7 @@ export default function Contact() {
               <i className="fa fa-download fa-2x" aria-hidden="true">
                 <span className="contact-text gmail">
                   <a
-                    href="https://drive.google.com/file/d/1tGndbJok4LyOsKt_uHL1ZP9vhRVq0pOa/view"
+                    href="https://drive.google.com/open?id=1DVHAZgyCByGn_sg9-a52pYhCW3gZ_F28"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
