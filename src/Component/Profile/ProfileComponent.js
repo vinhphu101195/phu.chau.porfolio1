@@ -7,7 +7,8 @@ class Profile extends Component {
     HTML: 90,
     CSS: 80,
     JavaScript: 80,
-    React: 70,
+    TypeScript: 80,
+    React: 90,
     Redux: 50,
     ReactRouter: 50,
     Sass: 75,
@@ -57,6 +58,14 @@ class Profile extends Component {
                       <div
                         className="skill-bar-fill animation-javascript"
                         style={{ width: this.state.JavaScript + "%" }}
+                      />
+                    </div>
+
+                    <li className="data">TypeScript</li>
+                    <div className="skill-bar">
+                      <div
+                        className="skill-bar-fill animation-javascript"
+                        style={{ width: this.state.TypeScript + "%" }}
                       />
                     </div>
 

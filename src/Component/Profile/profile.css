@@ -127,6 +127,9 @@
 .animation-javascript {
   animation: bar-animation-javascript 8s ease-out;
 }
+.animation-typescript {
+  animation: bar-animation-typescript 8s ease-out;
+}
 .animation-react {
   animation: bar-animation-react 8s ease-out;
 }
@@ -262,12 +265,20 @@
     width: 80%;
   }
 }
+@keyframes bar-animation-typescript {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
 @keyframes bar-animation-react {
   0% {
     width: 0px;
   }
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 @keyframes bar-animation-redux {
